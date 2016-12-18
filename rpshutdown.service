@@ -1,0 +1,10 @@
+[Unit]
+Description=Shutdown or Reboot Raspberry Pi
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python /home/pi/rpshutdown/rpshutdown.py
+User=pi
+Group=pi
